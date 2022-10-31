@@ -12,7 +12,7 @@ body{
 h1,h2,h3,h4,h5{
     margin: 0;
 }
-header{
+.header{
     width: 100%;
     margin: 0;
 
@@ -27,6 +27,24 @@ header{
     /*padding-top: 30px;*/
     /*background-color: black;*/
 }
+.header_meet{
+    width: 100%;
+    margin: 0;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+
+    background: url("images/first.jpg") center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    font-weight: bold;
+}
+
+
 .container{
     max-width: 1300px;
     margin: 0 auto;
@@ -34,6 +52,7 @@ header{
     justify-content: space-between;
     align-items: center;
 }
+
 .logo{
     font-size: 30px;
     font-weight: 700;
@@ -53,6 +72,16 @@ header{
     vertical-align: top;
 
     color: white;
+    text-decoration: none;
+    margin: 0 35px;
+    transition: color .1s linear;
+
+}
+.nav__button.active{
+    display: inline-block;
+    vertical-align: top;
+    font-weight: 700;
+    color: #ff43a4;
     text-decoration: none;
     margin: 0 35px;
     transition: color .1s linear;
@@ -200,7 +229,8 @@ header{
     font-weight: lighter;
     text-transform: uppercase;
 }
-.skills{
+.skills_page{
+    height: 70vh;
 
 
 
@@ -357,6 +387,14 @@ footer{
     justify-content: space-around;
     min-height: 170px;
 
+}
+.skills_footer{
+    padding-top: 30px;
+    padding-bottom: 60px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    min-height: 170px;
 }
 .drakosha__pre{
     position: fixed;
