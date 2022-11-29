@@ -478,3 +478,52 @@ footer{
     background: #9999ff;
     border: none;
 }
+
+
+.preloader_comments{
+    background: url("images/HjAY.gif") 100% 100% no-repeat;
+    background-size: 100% 100%;
+    margin-left: 30px;
+    width: 281px;
+    height: 188px;
+
+
+}
+.comments{
+    max-width: 60%;
+    display: none;
+}
+.h3_comment{
+    color: #6a648c;
+}
+.error_comment{
+    margin-left: 13%;
+    display: none;
+    margin-bottom: 20px;
+    color: #6a648c;
+
+
+}
+.comments_btn_second{
+    margin-left: 20%;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 7px;
+    border-radius: 100px;
+    color: white;
+    background: #6a648c;
+    border: #FF0077;
+
+}
+.comments_btn_first{
+    margin-left: 10%;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 7px;
+    border-radius: 100px;
+    color: white;
+    background: #6a648c;
+    border: #FF0077;
+}
