@@ -7,6 +7,13 @@
     <meta name="keywords" content="Drakosha, Developer, Designer ">
     <meta name="description" content="Development and design">
     <script src="script/speed.js"> </script>
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.6.1/dist/simpleParallax.min.js"></script>
 </head>
 <body>
 <header class="header_meet">
@@ -31,21 +38,24 @@
         <h2 class="review__title">Мои друзья </h2>
         <div class="album">
             <div class="album__preview">
-                <img class="photo_friends" src="css/images/bezzubic.jpg" alt="">
+                <!-- Инициализация изображения классом thumbnail      -->
+                <img class="photo_friends thumbnail" src="css/images/bezzubic.jpg" alt="">
                 <h4 class="album__name">Bezzubik</h4>
                 <p class="album__text">
                     Летает с камерой и без квадракоптера
                 </p>
             </div>
             <div class="album__preview">
-                <img class="photo_friends" src="css/images/dino.jpg" alt="">
+                <!-- Инициализация изображения классом thumbnail      -->
+                <img class="photo_friends thumbnail" src="css/images/dino.jpg" alt="">
                 <h4 class="album__name">Dino</h4>
                 <p class="album__text">
                     Обрабает звук лучше любого дракона (не уверена что у них есть уши)
                 </p>
             </div>
             <div class="album__preview">
-                <img class="photo_friends" src="css/images/tironazavrik.jpg" alt="">
+                <!-- Инициализация изображения классом thumbnail      -->
+                <img class="photo_friends thumbnail" src="css/images/tironazavrik.jpg" alt="">
                 <h4 class="album__name">Tironazavrik</h4>
                 <p class="album__text">
                     Программирует на Си-Шарпе
@@ -130,6 +140,38 @@
             </div>
         </div>
     </div>
+    <div class="other_friends">
+        <h3 class="review__subtitle">Альбом других наших друзей. </h3>
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+
+                    <img src="css/images/tom.jpg" alt="Tom" />
+                    <h4 class="album__name">Tom</h4>
+                </div>
+                <div class="swiper-slide">
+                    <img src="css/images/mia.jpg" alt="Mia" />
+                    <h4 class="album__name">Mia</h4>
+                </div>
+                <div class="swiper-slide">
+                    <img src="css/images/sherlok.jpg" alt="Sherlock" />
+                    <h4 class="album__name">Sherlock</h4>
+                </div>
+                ...
+            </div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+        </div>
+
+
+    </div>
+
 </main>
 <footer>
     <span class="logo">
@@ -169,5 +211,9 @@
 
 </footer>
 <script src="script/navigation.js"></script>
+<script src="script/swiperAlbum.js"></script>
+<script src="script/parallaxAlbum.js"></script>
+
+
 </body>
 </html>
